@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FantaZooAPI.iml" filepath="$PROJECT_DIR$/.idea/FantaZooAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FantaZooAPI/FantaZooAPI.iml" filepath="$PROJECT_DIR$/FantaZooAPI/FantaZooAPI.iml" />
     </modules>
   </component>
 </project>

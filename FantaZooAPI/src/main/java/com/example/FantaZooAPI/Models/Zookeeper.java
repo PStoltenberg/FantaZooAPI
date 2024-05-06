@@ -11,16 +11,14 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Animal {
+public class Zookeeper {
 
     @Id
     int id;
     String name;
     String race;
-    String description;
 
     @ManyToOne
     Habitat habitat;
-
 
 }

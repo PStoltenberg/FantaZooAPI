@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("/api/animal")
 public class AnimalController {
 
-    AnimalRepository ar;
+    private final AnimalRepository ar;
 
     AnimalController(AnimalRepository animalRepository){
         this.ar = animalRepository;
@@ -24,11 +24,16 @@ public class AnimalController {
 
     @GetMapping("/{id}")
     Animal getAnimalById(@PathVariable int id){
-
+        return ar.findById(id).get();
     }
 
     @PostMapping
     void insertAnimal(@RequestBody Animal animal){
+        ar.save(animal);
+    }
+
+    @PutMapping()
+    void updateAnimal(@RequestBody Animal animal){
         ar.save(animal);
     }
 

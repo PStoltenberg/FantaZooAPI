@@ -11,16 +11,17 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Animal {
+public class Habitat {
 
     @Id
     int id;
     String name;
-    String race;
-    String description;
+    Boolean bassin;
 
-    @ManyToOne
-    Habitat habitat;
+    @OneToMany
+    List<Animal> animal;
 
+    @OneToMany
+    List<Zookeeper> zookeeper;
 
 }
